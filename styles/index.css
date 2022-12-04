@@ -1,0 +1,68 @@
+@import url(navbar.css);
+@import url(footer.css);
+@import url(main.css);
+body {
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-area: menu;
+}
+
+@media(min-width: 1101px) {
+    .menu {
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.menu-link {
+    text-decoration: none;
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.menu>link:a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu>a:visited {
+    text-decoration: none;
+    color: green;
+}
+
+.menu>a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.main {
+    grid-area: main;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1f);
+    grid-template-areas: 'navbar navbar navbar navbar navbar' 'title title title title title' 'menu menu menu menu menu' 'main main main main main' 'footer footer footer footer footer';
+}
+
+@media(min-width: 1101px) {
+    #grid-container {
+        grid-template-areas: 'navbar navbar navbar navbar navbar' 'title title title title title' 'menu main main main main' 'footer footer footer footer footer';
+    }
+}

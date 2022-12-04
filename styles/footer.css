@@ -1,0 +1,9 @@
+.footer {
+    grid-area: footer;
+    margin-top: 10px;
+    background: #f9f9f9;
+}
+
+.footer>p {
+    margin-left: 10px;
+}
