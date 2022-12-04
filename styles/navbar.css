@@ -4,6 +4,8 @@
     height: 120px;
     align-items: center;
     grid-area: navbar;
+    background: #f9f9f9;
+    margin-bottom: 10px;
 }
 
 .navbar-child {
