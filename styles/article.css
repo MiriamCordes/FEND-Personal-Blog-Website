@@ -57,6 +57,10 @@
             }
         }
         
+        #navbar-title {
+            cursor: pointer;
+        }
+        
         img {
             border-radius: 50%;
             object-fit: cover;
@@ -65,6 +69,14 @@
         .article-image {
             width: 250px;
             height: 250px;
+        }
+        
+        .image-caption {
+            color: #444;
+            font-size: 80%;
+            text-align: center;
+            margin-top: 4px;
+            margin-bottom: 4px;
         }
         
         .article-header {
