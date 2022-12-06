@@ -71,3 +71,7 @@ body {
 #navbar-title {
     cursor: pointer;
 }
+
+figure {
+    margin: 0;
+}

@@ -96,6 +96,22 @@
         
         .social-sharing {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .sharing-box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        figure {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
